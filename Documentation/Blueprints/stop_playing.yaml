@@ -1,0 +1,41 @@
+blueprint:
+  name: Ambient Music – Stop Playing
+  domain: automation
+  input:
+    speakers:
+      name: Target speakers (optional)
+      selector:
+        target:
+          entity:
+            domain: media_player
+    require_clear:
+      name: Require blockers to be clear
+      default: true
+      selector:
+        boolean:
+trigger:
+  - platform: state
+    entity_id: binary_sensor.ambient_music_blockers_clear
+    to: "off"
+    for:
+      seconds: 1
+action:
+  - choose:
+      - conditions: "{{ (speakers.entity_id | default([], true)) | length > 0 }}"
+        sequence:
+          - service: ambient_music.pause_for_switchover
+            target: !input speakers
+            data:
+              blockers_cleared: !input require_clear
+          - service: ambient_music.stop_playing
+            target: !input speakers
+            data:
+              blockers_cleared: !input require_clear
+    default:
+      - service: ambient_music.pause_for_switchover
+        data:
+          blockers_cleared: !input require_clear
+      - service: ambient_music.stop_playing
+        data:
+          blockers_cleared: !input require_clear
+mode: single

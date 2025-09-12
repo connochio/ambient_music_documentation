@@ -1,18 +1,6 @@
 blueprint:
   name: Ambient Music – Stop Playing
   domain: automation
-  input:
-    speakers:
-      name: Target speakers (optional)
-      selector:
-        target:
-          entity:
-            domain: media_player
-    require_clear:
-      name: Require blockers to be clear
-      default: true
-      selector:
-        boolean:
 trigger:
   - platform: state
     entity_id: binary_sensor.ambient_music_blockers_clear

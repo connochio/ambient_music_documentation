@@ -22,7 +22,7 @@ This repository also
 
 ## Quick Links
 
-[Code](https://github.com/connochio/ambient_music_documentation/Documentation/Code#readme)  
-[Setup](https://github.com/connochio/ambient_music_documentation/Documentation/Setup#readme)  
-[Services](https://github.com/connochio/ambient_music_documentation/Documentation/Services#readme)  
-[Blueprints](https://github.com/connochio/ambient_music_documentation/Documentation/Blueprints#readme)  
+[Code](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Code)  
+[Setup](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Setup)  
+[Services](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Services)  
+[Blueprints](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Blueprints)  

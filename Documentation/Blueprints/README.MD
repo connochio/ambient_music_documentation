@@ -27,4 +27,4 @@ Music will then be paused on the configured media players.
 This blueprint will call the service that starts playing the currently selected playlist via the confogured media players.  
 
 When the playlist selection is switched for the music fade down duration + 1 second, or when the global blocker sensor changes to an 'On' state, the service will be called to start playing the selected playlist.  
-It will turn the configured media players to volune 0, start playing, and fade the volume up to the configured 'default volume' with the Ambient Music integration. 
+It will turn the configured media players to volume 0, start playing, and fade the volume up to the configured 'default volume' with the Ambient Music integration. 

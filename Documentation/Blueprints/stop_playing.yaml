@@ -8,6 +8,5 @@ trigger:
     for:
       seconds: 1
 action:
-  - default:
-      - service: ambient_music.stop_playing
+  - service: ambient_music.stop_playing
 mode: single

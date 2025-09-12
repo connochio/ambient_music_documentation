@@ -5,7 +5,7 @@
 Documentation for the Ambient Music integration, available via HACS to autonomously play spotify playlists on supported players via Home Assistant.
 
 > [!IMPORTANT]
-> This documentation is still in progress.
+> This documentation is still in progress.  
 > Please bear with me whilst I compile the documention and make sure that it is fit for use, easy to follow and accurate.
 
 ## Installation

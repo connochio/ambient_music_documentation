@@ -1,0 +1,14 @@
+blueprint:
+  name: Ambient Music – Pause for Playlist Switch
+  domain: automation
+trigger:
+  - platform: state
+    entity_id: select.ambient_music_playlists
+    to: null
+    from: null
+condition:
+  - condition: template
+    value_template: "{{ iif(require_clear, is_state('binary_sensor.ambient_music_blockers_clear','on'), true) }}"
+action:
+  - service: ambient_music.pause_for_switchover
+mode: single

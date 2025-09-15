@@ -1,6 +1,15 @@
 blueprint:
   name: Ambient Music – Stop Playing
+  description: Fade volume down to 0 and pause when Ambient Music blockers are present.
   domain: automation
+  input:
+    speakers:
+      name: Override speakers (optional)
+      default: {}
+      selector:
+        target:
+          entity:
+            domain: media_player
 trigger:
   - platform: state
     entity_id: binary_sensor.ambient_music_blockers_clear
@@ -9,4 +18,5 @@ trigger:
       seconds: 1
 action:
   - service: ambient_music.stop_playing
+    target: !input speakers
 mode: single

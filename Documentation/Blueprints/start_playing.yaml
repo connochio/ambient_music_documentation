@@ -12,7 +12,7 @@ blueprint:
             domain: media_player
     blockers_cleared:
       name: Require blockers to be clear
-      description: If enabled, only run when blockers are clear.
+      description: If enabled, only run when Ambient Music blockers are not present.
       default: true
       selector:
         boolean:

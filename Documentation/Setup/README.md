@@ -32,6 +32,8 @@ After clicking on this, you will be asked to provide a playlist name and spotify
 <br />
 ### Name
 This name will be used throughout the integration, and may include special characters.  
+
+It cannot be changed after it has been created however.  
 <br />
 ### Spotify ID
 

@@ -16,9 +16,9 @@ Install this integration via HACS with the link above.
 
 ## Description
 
-This documentation repository contain all documentation that may be needed or required to use the Ambient Music integration.  
+This documentation repository contain all documentation that may be needed or required to use the Ambient Music integration, in additiona to information about services, sensors and entities for troubleshooting purposes.
 
-This repository also contains blueprints for the 3 base automations that alow Ambient Music to control your music, service information and sensor information for troubleshooting purposes.  
+This repository also contains blueprints for the 3 base automations that allows Ambient Music to control your music.
 
 Fully commented code will also be included in the future to enable anyone to inspect and learn from this integration, or to help anyone that wants to contribute to the integration in the future.
 

@@ -19,10 +19,10 @@ blueprint:
 trigger:
   - platform: state
     entity_id: select.ambient_music_playlists
-condition:
-  - condition: template
-    value_template: >
-      {{ (not (blockers_cleared)) or is_state('binary_sensor.ambient_music_blockers_clear', 'on') }}
+conditions:
+  - condition: state
+    entity_id: binary_sensor.ambient_music_blockers_clear
+    state: "on"
 action:
   - service: ambient_music.pause_for_switchover
     data:

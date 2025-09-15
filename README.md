@@ -16,13 +16,16 @@ Install this integration via HACS with the link above.
 
 ## Description
 
-This documentation repository contain all documentation that may be needed or required to use the Aambient Music integration.  
+This documentation repository contain all documentation that may be needed or required to use the Ambient Music integration.  
 
-This repository also
+This repository also contains blueprints for the 3 base automations that alow Ambient Music to control your music, service information and sensor information for troubleshooting purposes.  
+
+Fully commented code will also be included in the future to enable anyone to inspect and learn from this integration, or to help anyone that wants to contribute to the integration in the future.
 
 ## Quick Links
 
-[Code](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Code)  
-[Setup](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Setup)  
-[Services](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Services)  
-[Blueprints](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Blueprints)  
+[Code](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Code) - Commented code  
+[Sensors](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Sensors) - Sensor information  
+[Setup](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Setup) - Setup information and guides  
+[Services](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Services) - Service information  
+[Blueprints](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Blueprints) - Ready-made base blueprints  

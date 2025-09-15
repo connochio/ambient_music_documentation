@@ -4,7 +4,7 @@ Within this section of the documentation are pre-built and ready-to-go blueprint
   
 ## Stop Playing
 
-[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fconnochio%2Fambient_music_documentation%2Fblob%2Fmain%2FDocumentation%2FBlueprints%2Fstop_playing.yaml)  
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fconnochio%2Fambient_music_documentation%2Fblob%2Fmain%2FDocumentation%2FBlueprints%2FYaml%2Fstop_playing.yaml)  
 
 This blueprint will call the service that stops ambient music from playing.  
 
@@ -17,9 +17,9 @@ When the global blocker sensor turns to an 'Off' state, the service will be call
 This will happen over the course of the configured 'volume fade down' within the Ambient Music integration.  
 Music will then be paused on the configured media players.  
 
-## Pause for Playlist Switch
+## Fade Down to Switch Playlist
 
-[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fconnochio%2Fambient_music_documentation%2Fblob%2Fmain%2FDocumentation%2FBlueprints%2Fswitch_playlist.yaml)  
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fconnochio%2Fambient_music_documentation%2Fblob%2Fmain%2FDocumentation%2FBlueprints%2FYaml%2Fswitch_playlist.yaml)  
 
 This blueprint will call the service that stops ambient music from playing before switching to the new selection.  
   
@@ -36,7 +36,7 @@ Music will then be paused on the configured media players.
 
 ## Start Playing Selected Playlist
 
-[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fconnochio%2Fambient_music_documentation%2Fblob%2Fmain%2FDocumentation%2FBlueprints%2Fstart_playing.yaml)  
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fconnochio%2Fambient_music_documentation%2Fblob%2Fmain%2FDocumentation%2FBlueprints%2FYaml%2Fstart_playing.yaml)  
 
 This blueprint will call the service that starts playing the currently selected playlist via the confogured media players.  
   

@@ -13,6 +13,7 @@ git clone https://github.com/connochio/ambient_music.git
 ha core restart
 ```
 
+<br />
 # Configuration
 
 After installation of the integration via HACS, the Ambient Music integration will be available within the integrations page within the Home Assistant settings.
@@ -24,19 +25,17 @@ Further configuration is required to enable the Ambient Music system however.
 
 Clicking on the gear icon within the Ambient Music integration will give you some options:  
 <br />
-
+<br />
 ## Add Playlist
 
 After clicking on this, you will be asked to provide a playlist name and spotify ID.  
-
+<br />
 ### Name
-This name will be used throughout the integration, and may include special characters.
-
-
-
+This name will be used throughout the integration, and may include special characters.  
+<br />
 ### Spotify ID
 
-> [!NOTE]
+> [!TIP]
 > This box will accept both a full spotify URL or 22-char ID
 
 The Spotify ID can obtained from the [Spotify website](https://spotify.com), and this box will accept either a raw 22-character ID or a full URL for ease-of-use.  
@@ -47,24 +46,33 @@ An example for this would be:
 The ID for this playlist would be:  
 `0vvXsWCC9xrXsKd4FyS8kM`
 
+<br />
+<br />
+
 ## Manage Blockers
 
 This option will allow you to set up, edit or remove "blockers" from the Ambient Music system.  
 
-These blockers are entities or user-created templates that should return a true/false value.  
-If any blocker returns true, Ambient Music will either stop playing and be blocked from starting to play a playlist.
-
-Within this option, there are multiple further options:
+Blockers are either entity states or user-created templates that block Ambient Music from running.
+<br />
+<br />
 
 ### Add Blocker
 
 This option will allow you to add a blocker via 2 methods, selectable via radial buttons.
 
-If the state option is selected, you will be prompted to select an entity, and a desired state.  
+If the state option is selected, you will be prompted to give the blocker a name, select an entity, and a desired state for that entity.  
+If the template option is selected, you will be prompted to give the blocker a name, and enter a template.  
+
+> [!TIP]
+> The state option is great for single entities.
+> 
+> The template options is great for more advanced checks.
+
 When the entity is in the desired state, the blocker will return as `true` and block the usage of Ambient Music.  
 
-You may also opt to invert this entity state as well.  
-If the entity and state selected return true, and the invert option is selected, the result will be `false` for the purposes of Ambient Music
+You may also opt to invert the outout of the state or template.  
+If the state or template return a `true` result, and the invert option is selected, `false` will be given for the purposes of Ambient Music, and vice versa.  
 
 <details><summary>Example inverted state</summary>
 <br />

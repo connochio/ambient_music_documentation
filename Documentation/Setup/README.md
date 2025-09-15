@@ -75,7 +75,7 @@ When the entity is in the desired state, the blocker will return as `true` and b
 You may also opt to invert the outout of the state or template.  
 If the state or template return a `true` result, and the invert option is selected, `false` will be given for the purposes of Ambient Music, and vice versa.  
 
-<details><summary>Example inverted state</summary>
+<details><summary>Example inverted blocker</summary>
 <br />
 A good example of where this may be useful is if you would like to limit Ambient Music to only work when someone is at home.  
   
@@ -84,7 +84,7 @@ Entity: `person.connochio`
 State: `Home`  
 Invert: `True`  
 
-In this configuration, if the location of person.connochio is <i>not</i> `Home`, then Ambient Music will be blocked from running.
+In this configuration, if the location of person.connochio is anything <i>other</i> than `Home`, Ambient Music will be blocked from running.
 </details>
 
 

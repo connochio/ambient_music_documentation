@@ -1,0 +1,36 @@
+blueprint:
+  name: Ambient Music – Start Playing
+  description: Start the currently selected playlist at volume 0, then fade up.
+  domain: automation
+  input:
+    speakers:
+      name: Override speakers (optional)
+      default: {}
+      selector:
+        target:
+          entity:
+            domain: media_player
+    blockers_cleared:
+      name: Require blockers to be clear
+      description: If enabled, only run when blockers are clear.
+      default: true
+      selector:
+        boolean:
+trigger:
+  - platform: state
+    entity_id: binary_sensor.ambient_music_blockers_clear
+    to: "on"
+  - platform: state
+    entity_id: select.ambient_music_playlists
+    for:
+      seconds: "{{ (states('number.ambient_music_volume_fade_down_seconds') | float(0)) + 1 }}"
+condition:
+  - condition: template
+    value_template: >
+      {{ (not (blockers_cleared)) or is_state('binary_sensor.ambient_music_blockers_clear', 'on') }}
+action:
+  - service: ambient_music.play_current_playlist
+    data:
+      blockers_cleared: !input blockers_cleared
+    target: !input speakers
+mode: single

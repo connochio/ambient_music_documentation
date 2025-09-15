@@ -47,7 +47,6 @@ An example for this would be:
 
 The ID for this playlist would be:  
 `0vvXsWCC9xrXsKd4FyS8kM`
-
 <br />
 <br />
 

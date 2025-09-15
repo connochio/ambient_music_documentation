@@ -1,0 +1,31 @@
+blueprint:
+  name: Ambient Music - Switch Playlist
+  description: Fade volume down to 0 then pause when the playlist selection changes.
+  domain: automation
+  input:
+    speakers:
+      name: Override speakers (optional)
+      default: {}
+      selector:
+        target:
+          entity:
+            domain: media_player
+    blockers_cleared:
+      name: Require blockers to be clear
+      description: If enabled, only run when Ambient Music blockers are not present.
+      default: true
+      selector:
+        boolean:
+trigger:
+  - platform: state
+    entity_id: select.ambient_music_playlists
+condition:
+  - condition: template
+    value_template: >
+      {{ (not (blockers_cleared)) or is_state('binary_sensor.ambient_music_blockers_clear', 'on') }}
+action:
+  - service: ambient_music.pause_for_switchover
+    data:
+      blockers_cleared: !input blockers_cleared
+    target: !input speakers
+mode: single

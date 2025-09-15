@@ -24,10 +24,10 @@ trigger:
     entity_id: select.ambient_music_playlists
     for:
       seconds: "{{ (states('number.ambient_music_volume_fade_down_seconds') | float(0)) + 1 }}"
-condition:
-  - condition: template
-    value_template: >
-      {{ (not (blockers_cleared)) or is_state('binary_sensor.ambient_music_blockers_clear', 'on') }}
+conditions:
+  - condition: state
+    entity_id: binary_sensor.ambient_music_blockers_clear
+    state: "on"
 action:
   - service: ambient_music.play_current_playlist
     data:

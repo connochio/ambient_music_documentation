@@ -1,5 +1,5 @@
 blueprint:
-  name: Ambient Music – Start Playing
+  name: Ambient Music - Start Playing
   description: Start the currently selected playlist at volume 0, then fade up.
   domain: automation
   input:

@@ -12,8 +12,8 @@ cd custom_components
 git clone https://github.com/connochio/ambient_music.git
 ha core restart
 ```
-
 <br />
+
 # Configuration
 
 After installation of the integration via HACS, the Ambient Music integration will be available within the integrations page within the Home Assistant settings.

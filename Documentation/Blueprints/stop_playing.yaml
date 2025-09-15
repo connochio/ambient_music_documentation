@@ -1,5 +1,5 @@
 blueprint:
-  name: Ambient Music – Stop Playing
+  name: Ambient Music - Stop Playing
   description: Fade volume down to 0 and pause when Ambient Music blockers are present.
   domain: automation
   input:

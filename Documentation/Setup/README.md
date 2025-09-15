@@ -23,7 +23,7 @@ For more information on these sensors/entities, see [the sensors documentation](
 
 Further configuration is required to enable the Ambient Music system however.  
 
-Clicking on the gear icon within the Ambient Music integration will give you some options:  
+Clicking on the gear icon within the Ambient Music integration will give you some options:
 <br />
 <br />
 ## Add Playlist

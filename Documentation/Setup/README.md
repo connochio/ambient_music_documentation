@@ -24,8 +24,11 @@ These components are:
 - [Media Players](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Setup#media-players) - Required
 
 To start using the Ambient Music system, at least one playlist and at least one media player is required to be set up.  
+Some automations to call the Ambient Music services are also required, and the system will be automatic from then on.
 
-Optionally, blockers can be configured that can control when Ambient Music is active or not.
+Blueprints for some starter automations can be found in [the blueprints documentation](https://github.com/connochio/ambient_music_documentation/tree/main/Documentation/Blueprints).
+
+Optionally, blockers can be configured that can more finely control when Ambient Music is active or not.
 <br />
 <br />
 

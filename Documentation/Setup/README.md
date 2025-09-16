@@ -78,16 +78,34 @@ If the state or template return a `true` result, and the invert option is select
 <details><summary>Example inverted blocker</summary>
 <br />
 A good example of where this may be useful is if you would like to limit Ambient Music to only work when someone is at home.  
-  
+
 An example entity and state for this would be:  
 Entity: `person.connochio`  
-State: `Home`  
+State: `home`  
 Invert: `True`  
 
-In this configuration, if the location of person.connochio is anything <i>other</i> than `Home`, Ambient Music will be blocked from running.
+In this configuration, if the location of person.connochio is anything <i>other</i> than `home`, Ambient Music will be blocked from running.
 </details>
+<br />
 
+### Edit Blocker
 
+> [!NOTE]
+> This option will only appear after the first blocker is created
+
+This option will allow you to edit the entity and state for a state blocker, or the template for a template blocker.  
+
+The name cannot be changed after creation however.  
+In the case that you want to rename a blocker, the old blocker must be deleted and a new blocker created with the new name
+<br />
+<br />
+
+### Remove Blockers
+
+> [!NOTE]
+> This option will only appear after the first blocker is created
+
+This option will allow blockers to be removed via checkboxes
 
 
 

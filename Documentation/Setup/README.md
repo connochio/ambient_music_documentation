@@ -46,19 +46,21 @@ Clicking on the gear icon within the Ambient Music integration will give you som
 <br />
 ## Add Playlist
 
-After clicking on this, you will be asked to provide a playlist name and spotify ID.  
+After clicking on this, you will be asked to provide a playlist name and link/ID.  
 <br />
 ### Name
 This name will be used throughout the integration, and may include special characters.  
 
 It cannot be changed after it has been created however.  
 <br />
-### Spotify ID
+### Playlist Link/ID
 
 > [!TIP]
-> This box will accept both a full spotify URL or 22-char ID
+> This box will accept multiple formats and will automatically extract the relevant IDs.
 
-The Spotify ID can obtained from the [Spotify website](https://spotify.com), and this box will accept either a raw 22-character ID or a full URL for ease-of-use.  
+#### Spotify
+
+The Playlist ID can obtained from the [Spotify website](https://spotify.com), and this box will accept either a raw 22-character ID or a full URL for ease-of-use.  
 
 An example for this would be:  
 `https://open.spotify.com/playlist/0vvXsWCC9xrXsKd4FyS8kM`
@@ -67,6 +69,10 @@ The ID for this playlist would be:
 `0vvXsWCC9xrXsKd4FyS8kM`
 <br />
 <br />
+
+#### Youtube Music
+
+#### Local/Music Assistant
 
 ## Manage Blockers
 
